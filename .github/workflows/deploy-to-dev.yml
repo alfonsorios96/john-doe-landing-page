@@ -28,6 +28,11 @@ jobs:
 
             - name: Build # Compila el proyecto
               run: npm run build
+
+            - name: Debug lista de archivos
+              run: |
+                echo "PWD = $PWD"
+                ls -R .
             
             - name: Deploy to Dev # Despliega el proyecto en la rama gh-pages
               uses: peaceiris/actions-gh-pages@v4
