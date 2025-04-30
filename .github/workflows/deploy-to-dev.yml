@@ -4,6 +4,7 @@ on:
     push:
         branches:
             - main # Activa el job cuando se hace un push a la rama main
+    workflow_dispatch:
 
 permissions: # sirve para dar permisos a los jobs
     contents: write # permite escribir en el repositorio
